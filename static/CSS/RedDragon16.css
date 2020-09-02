@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    background: black;
+}
+/* Menu */
+#menu ul {
+    background: red;
+    text-align: center;
+}
+#menu li {
+    background: red;
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+}
+#menu a {
+    background: red;
+    display: block;
+}
+#menu a:hover {
+    background: white;
+}
+/* Label */
+#Label {
+    text-align: center;
+    color: red;
+}

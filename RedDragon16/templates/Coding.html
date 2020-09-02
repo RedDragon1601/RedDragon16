@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/RedDragon16.css' %}">
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/About/">About</a></li>
+            <li><a href="/RedDragon16/">RedDragon16</a></li>
+            <li><a href="/Music/">Music</a></li>
+            <li><a href="/Coding/">Coding</a></li>
+        </ul>
+    </div>
+    <div id="Label">
+        {% for post in posts %}
+            <h1>{{ post.title }}</h1>
+        {% endfor %}
+        <img src="{% static 'IMAGE/Coding/PythonCodingBackground.png' %}">
+        {% for post in posts %}
+            {{ post.body|safe }}
+        {% endfor %}
+        <img src="{% static 'IMAGE/Coding/Install_Python_Attention.png' %}">
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="/Coding/CodingBotChat/">CodingBotChat</a></li>
+            <li><a href="/Coding/CodingWebDjango/">CodingWebDjango</a></li>
+            <li><a href="/Coding/CodingWebDjango_1/">CodingWebDjango_1</a></li>
+            <li><a href="/Coding/CodingWebDjango_2/">CodingWebDjango_2</a></li>
+            <li><a href="/Coding/CodingWebDjango_3/">CodingWebDjango_3</a></li>
+        </ul>
+    </div>
+</body>
+</html>

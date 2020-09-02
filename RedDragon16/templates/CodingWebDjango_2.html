@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingWebDjango_2</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/RedDragon16.css' %}">
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/About/">About</a></li>
+            <li><a href="/RedDragon16/">RedDragon16</a></li>
+            <li><a href="/Music/">Music</a></li>
+            <li><a href="/Coding/">Coding</a></li>
+        </ul>
+    </div>
+    <div id="Label">
+        {% for post in posts %}
+            <h1>{{ post.title }}</h1>
+            <h3>{{ post.Introduction }}</h3>
+            <h2>{{ post.title_1 }}</h2>
+        {% endfor %}
+        <img src="{% static 'IMAGE/CodingWebDjango_2/Django_Step_1_2.png' %}" width="1260px" height="auto">
+        {% for post in posts %}
+            <h2>{{ post.title_2 }}</h2>
+        {% endfor %}
+        <img src="{% static 'IMAGE/CodingWebDjango_2/Django_Step_2_2.png' %}" width="1260px" height="auto">
+        {% for post in posts %}
+            <h2>{{ post.title_3 }}</h2>
+        {% endfor %}
+        <img src="{% static 'IMAGE/CodingWebDjango_2/Django_Step_3_2.png' %}" width="1260px" height="auto">
+        {% for post in posts %}
+            <h2>{{ post.title_4 }}</h2>
+        {% endfor %}
+        <img src="{% static 'IMAGE/CodingWebDjango_2/Django_Step_4_2.png' %}" width="1260px" height="auto">
+        {% for post in posts %}
+            <h2>{{ post.title_5 }}</h2>
+        {% endfor %}
+        <img src="{% static 'IMAGE/CodingWebDjango_2/Django_Step_5_2.png' %}" width="1260px" height="auto">
+        {% for post in posts %}
+            <h2>{{ post.Result }}</h2>
+        {% endfor %}
+        <img src="{% static 'IMAGE/CodingWebDjango_2/Result_2.png' %}" width="1260px" height="auto">
+    </div>
+</body>
+</html>
