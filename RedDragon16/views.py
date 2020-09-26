@@ -145,3 +145,46 @@ def CodingWebDjango_3(request):
         'posts':CodingWebDjango_3_Post
     }
     return render(request, 'CodingWebDjango_3.html', Database)
+
+def RedDragon16(request):
+    Information = [
+        {
+            'title':'RedDragon16',
+            'About':'Page này nói về Game !',
+        }
+    ]
+    Database = {
+        'posts':Information
+    }
+    return render(request, 'RedDragon16.html', Database)
+
+def T3FPSMBGS(request):
+    COD = '''
+    Nếu nói đến những tựa game FPS thành công và hay nhất trên mobile , ta ko thể ko nói đến cod mobile
+    . Với chế độ multiplayer 5v5 kinh điển cùng với số lượng map đa dạng cùng các mode chơi cải tiến từ
+    5v5 như 10v10, chiếm cử điểm, cướp cờ, ... Nếu bạn muốn có 1 trải nghiệm FPS tuyệt vời hãy đến COD mobile !
+    '''
+    PUBG = '''
+    Mặc dù là 1 game Battle royale nhưng PUBG Mobile hay còn gọi là PlayerUnknown's battlegrounds Mobile nhưng
+    PUBG Mobile vẫn mang những đặc tính của game FPS, game có 1 chế độ chơi 4v4 mang tính FPS cùng các chế độ chơi đa
+    dạng khác
+    '''
+    STDF = '''
+    Mặc dù chưa trải nghiệm tựa game này nhưng theo mik đây cũng là 1 tựa game khá hay, game được mệnh danh là CSGO
+    mobile !
+    '''
+    Post = [
+        {
+            'title':'Top 3 FPS Mobile Games',
+            'title_1':'1.Call Of Duty Mobile !',
+            'COD':COD,
+            'title_2':'2.PUBG Mobile !',
+            'PUBG':PUBG,
+            'title_3':'3.Standoff 2 !',
+            'STDF':STDF
+        }
+    ]
+    Database = {
+        'posts':Post
+    }
+    return render(request, 'T3FPSMBGS.html', Database)

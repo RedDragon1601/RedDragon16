@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 Battle Royale Mobile Games</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/RedDragon16.css' %}">
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/About/">About</a></li>
+            <li><a href="/RedDragon16/">RedDragon16</a></li>
+            <li><a href="/Music/">Music</a></li>
+            <li><a href="/Coding/">Coding</a></li>
+        </ul>
+    </div>
+    <div id="Label">
+        {% for post in posts %}
+            <h1>{{ post.title }}</h1>
+            <h2>{{ post.title_1 }}</h2>
+            <h3>{{ post.COD }}</h3>
+        {% endfor %}
+        <img src="{% static 'IMAGE/FPS_Mobile/COD.png' %}">
+        {% for post in posts %}
+            <h2>{{ post.title_2 }}</h2>
+            <h3>{{ post.PUBG }}</h3>
+        {% endfor %}
+        <img src="{% static 'IMAGE/FPS_Mobile/PUBG.png' %}">
+        {% for post in posts %}
+            <h2>{{ post.title_3 }}</h2>
+            <h3>{{ post.STDF }}</h3>
+        {% endfor %}
+        <img src="{% static 'IMAGE/FPS_Mobile/STDF.png' %}">
+    </div>
+</body>
+</html>
